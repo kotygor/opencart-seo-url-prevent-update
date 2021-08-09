@@ -1,0 +1,32 @@
+{
+	"name": "kotygor/opencart-seo-url-prevent-update",
+	"version": "v1.0.0",
+	"description": "Блокує зміну seo_url при редагуванні товару/категорії/інформації/виробника",
+	"type": "opencart-extension",
+	"minimum-stability": "dev",
+	"extra": {
+		"opencart-install-dir": "www",
+		"opencart-storage-dir": "opencart-storage",
+		"src-dir": "upload",
+		"mappings": [
+			"admin/controller/extension/module/seomod.php",
+			"admin/language/en-gb/extension/module/seomod.php",
+			"admin/language/ru-ru/extension/module/seomod.php",
+			"admin/language/uk-ua/extension/module/seomod.php",
+			"admin/view/template/extension/module/seomod.twig"
+		],
+		"installers":{
+			"xml": "install.xml"
+		}
+	},
+	"require": {
+		"php": ">=7.1.0",
+		"kotygor/opencart-extension-installer": "*"
+	},
+	"repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/kotygor/opencart-extension-installer"
+		}
+	]
+}
